@@ -24,7 +24,7 @@ const App = () => (
       <BrowserRouter>
         <MainLayout>
           <Routes>
-           {/* <Route path="/" element={<Dashboard />} /> */}
+           {<Route path="/" element={<OperationDashboard />} />}
             <Route path="/graphs" element={<Graphs />} />
             <Route path="/alerts" element={<ThresholdAlerts />} />
             <Route path="/operation-dashboard" element={<OperationDashboard />} />
