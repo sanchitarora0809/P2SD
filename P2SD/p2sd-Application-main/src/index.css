@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 213 100% 17%;
+    
+    /* P2SD Brand Colors */
+    --primary: 213 100% 17%; /* Navy Blue #001F54 */
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 48 100% 50%; /* Yellow #FFC300 */
+    --secondary-foreground: 213 100% 17%;
+    
+    --accent: 48 100% 50%;
+    --accent-foreground: 213 100% 17%;
+    
+    /* Status Colors */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 48 100% 50%;
+    --warning-foreground: 213 100% 17%;
+    
+    --danger: 0 84% 60%;
+    --danger-foreground: 0 0% 100%;
+    
+    /* UI Colors */
+    --card: 0 0% 100%;
+    --card-foreground: 213 100% 17%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 100% 17%;
+    
+    --muted: 214 32% 96%;
+    --muted-foreground: 213 20% 45%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 213 100% 17%;
+    
+    --radius: 0.5rem;
+    
+    /* Sidebar */
+    --sidebar-background: 213 100% 17%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 48 100% 50%;
+    --sidebar-primary-foreground: 213 100% 17%;
+    --sidebar-accent: 213 95% 22%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 213 80% 25%;
+    --sidebar-ring: 48 100% 50%;
+    
+    /* Chart Colors */
+    --chart-1: 142 71% 45%;
+    --chart-2: 48 100% 50%;
+    --chart-3: 0 84% 60%;
+    --chart-4: 210 100% 50%;
+    --chart-5: 280 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
